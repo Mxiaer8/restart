@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sixth_homework</title>
+</head>
+<body>
+	<p id = "hello"></p>
+	<script>
+		function getTime() {
+			var now = new Date();
+			var hours = now.getHours();
+			var info;
+			if(hours >= 0 && hours <= 12) {
+				info = "早上好！";
+			} else if(hours > 12 && hours < 24) {
+				info = "晚上好！";
+			}
+			document.getElementById("hello").innerHTML = info;
+		}
+		getTime();
+	</script>
+</body>
+</html>
